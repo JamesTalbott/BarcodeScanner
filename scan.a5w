@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html>
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 7340-5549">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />            
+<head>
+
+
+<%a5
+Delete tmpl_LOGO
+DIM tmpl_LOGO as P
+tmpl_LOGO = a5w_load_component("logo") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:logo)
+
+'Override settings start -----------------------------------------
+with tmpl_LOGO
+.alias = "LOGO"
+_dialogFilename = "logo"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_LOGO
+dim x_LOGO as p
+x_LOGO = a5w_run_Component(tmpl_LOGO) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:logo)
+
+?x_LOGO.Output.Head.JavaScript
+?x_LOGO.Output.Head.CSS_Link
+
+?x_LOGO.Output.Head.Title 
+%>
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/A5V12_6699/css/Alpha/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/A5V12_7776/css/Alpha/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+<title></title>
+</head>
+
+
+
+<body class="page">
+
+<%a5 ?x_LOGO.Output.Body.Dialog2_HTML %>
+<%a5 ?a5dialogHelper_generateCORSHeaders() %>
+&nbsp; 
+</body></html>
