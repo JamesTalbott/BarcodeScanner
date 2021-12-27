@@ -173,8 +173,8 @@
         "info": {
             "createdBy": "Administrator",
             "dateCreated": "2021-5-25",
-            "dateLastEdited": "2021-12-20",
-            "revisionnumber": 200
+            "dateLastEdited": "2021-12-27",
+            "revisionnumber": 201
         },
         "CSSSubThemeDefinition": "element.style {\n    border: solid;\n    width: 100%;\n    border-radius: 10px;\n    box-sizing: border-box;\n    position: relative;\n}",
         "flagShowCommentsInTree": true,
@@ -383,21 +383,14 @@
                 "containerStartIndex": 0
             },
             {
-                "controltype": "layout_directive_statictext",
+                "controlType": "layout_directive_statictext",
+                "display": "{B=White,Light Blue} 3{T=.3}{C=Black,White}{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=df0c7bb2_da05_4e32_b113_e7d63e78b5f9}{I:'$$format.text'} [Static Text:For use with the Phone's Scanner] �",
+                "displayODFlat": "{Data=df0c7bb2_da05_4e32_b113_e7d63e78b5f9}",
                 "idInternal": "df0c7bb2_da05_4e32_b113_e7d63e78b5f9",
                 "parentContainer": 2,
-                "containerStartIndex": 0,
-                "display": "{B=White,Light Blue} 3{T=.3}{C=Black,White}{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=df0c7bb2_da05_4e32_b113_e7d63e78b5f9}{I:'$$format.text'} [Static Text:For use with the Phone's Scanner] �",
-                "crc": "4294966401",
-                "iscollapsed": false,
-                "parentIsCollapsed": false,
-                "displayODFlat": "{Data=df0c7bb2_da05_4e32_b113_e7d63e78b5f9}",
                 "displayOD": "{Data=df0c7bb2_da05_4e32_b113_e7d63e78b5f9}",
                 "displayODtree": "{Data=df0c7bb2_da05_4e32_b113_e7d63e78b5f9}",
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<div id=\"{dialog.componentName}.V.R{dialog.rownumber}.STATICTEXT_1\" title=\"\"  class=\"\" style=\"box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"   >For use with the Phone's Scanner</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
-                    "DesignViewHTML": ""
-                },
+                "crc": "4294966401",
                 "v": {
                     "StaticText": "For use with the Phone's Scanner",
                     "Class": "<Default>",
@@ -436,7 +429,14 @@
                         "display": "{B=White,Light Blue} 3{T=.3}{C=Black,White}{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=df0c7bb2_da05_4e32_b113_e7d63e78b5f9}{I:'$$format.text'} [Static Text:For use with the Phone's Scanner] �"
                     },
                     "controlContainerStyle": ""
-                }
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<div id=\"{dialog.componentName}.V.R{dialog.rownumber}.STATICTEXT_1\" title=\"\"  class=\"\" style=\"box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\"   >For use with the Phone's Scanner</div>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": ""
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 0
             },
             {
                 "controlType": "layout_directive_button",
@@ -1119,17 +1119,11 @@
                 }
             },
             {
-                "controltype": "layout_directive_button",
+                "controlType": "layout_directive_button",
+                "display": "{B=White,Light Blue} 10{T=.3}{C=Black,White}{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=7c25e74c-3722-4db8-9b20-447886e1aff2}{I:'$$control.button'} [Button: External Scanner] �",
                 "idInternal": "7c25e74c-3722-4db8-9b20-447886e1aff2",
                 "parentContainer": 2,
-                "containerStartIndex": 0,
-                "display": "{B=White,Light Blue} 10{T=.3}{C=Black,White}{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=7c25e74c-3722-4db8-9b20-447886e1aff2}{I:'$$control.button'} [Button: External Scanner] �",
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 50%\" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_11\"    ></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
-                    "DesignViewHTML": ""
-                },
                 "crc": "4294927177",
-                "iscollapsed": false,
                 "v": {
                     "buttonText": "External Scanner",
                     "Class": "<Default>",
@@ -1156,8 +1150,6 @@
                         "hoverImageName": "",
                         "displayDropdownIconOnButton": false,
                         "displayAsSplitButton": false,
-                        "showBadge": false,
-                        "badgeSettingsJSON": "",
                         "hyperlinkClass": "[class.gridHyperlinkButton]",
                         "hyperlinkImagePosition": "None",
                         "hyperlinkInlineStyle": "",
@@ -1167,7 +1159,9 @@
                         "pressedImageName": "",
                         "textClass": "buttonPrimary",
                         "textInlineStyle": "",
-                        "type": "Button"
+                        "type": "Button",
+                        "showBadge": false,
+                        "badgeSettingsJSON": ""
                     },
                     "securityGroups": "",
                     "showHideExpn": "",
@@ -1188,6 +1182,10 @@
                         "javascriptAdvancedButton_control": "{dialog.object}._buttons['BUTTON_11'] = new A5.Button({\n\tlayout: 'text',\n\tstyle: 'background-color: #0df; width: 100%; height: 50px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',\n\thtml: '<span  class=\"buttonPrimary\" >External Scanner</span>',\n\tonClick: function() { \n\n},\n\ttheme: '{grid.style}'\n});",
                         "javascriptAdvancedButton_bind": "{dialog.object}._buttons['BUTTON_11'].bind('{DIALOG.COMPONENTNAME}.V.R{DIALOG.ROWNUMBER}.BUTTON_11');"
                     },
+                    "javascript": {
+                        "onclick": ""
+                    },
+                    "consumedInSpecialPanelButton": false,
                     "info": {
                         "level": 2,
                         "isContainerStart": false,
@@ -1211,12 +1209,14 @@
                         "break": true,
                         "display": "{B=White,Light Blue} 10{T=.3}{C=Black,White}{B=White,Light Blue}{I:'vertline'}{I:'vertline'}{Data=7c25e74c-3722-4db8-9b20-447886e1aff2}{I:'$$control.button'} [Button: External Scanner] �"
                     },
-                    "javascript": {
-                        "onclick": ""
-                    },
-                    "controlContainerStyle": "",
-                    "consumedInSpecialPanelButton": false
-                }
+                    "controlContainerStyle": ""
+                },
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 50%\" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_11\"    ></button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->",
+                    "DesignViewHTML": ""
+                },
+                "isCollapsed": false,
+                "containerStartIndex": 0
             },
             {
                 "controlType": "layout_directive_placeholder",
@@ -3995,7 +3995,7 @@
         "alphaFiveBuildNumber": "12",
         "openedFromTemplate": false,
         "builtWithVersionNumer": 1,
-        "_buildCount": "199",
+        "_buildCount": "200",
         "securityEnabled": false,
         "showHideIsUsed": false,
         "precalc": {
@@ -4159,7 +4159,7 @@
         "sassProcessor": true,
         "debugMode": false,
         "__jsLibraries": "<script type=\"text/javascript\" src=\"javascript/a5.js\"></script>\n<script type=\"text/javascript\" src=\"javascript/a5_url.js\"></script>\n",
-        "A5SaveTimeStamp": "20211220144955434",
+        "A5SaveTimeStamp": "20211227121000531",
         "a_actionJavascript": [
             {
                 "actionGuid": "bdca4691-9607-4a9d-be36-5b273c228461  ",
@@ -4260,7 +4260,7 @@
             "output": {
                 "Head": {
                     "JavaScript": "*gzip:H4sIAAAAAAAAC5WMsQ6CQBAFexP/Aa/Hq+gOOjsqf2Cznq84PPGyuyD8vSQUFlaWM5NM0CipWGVrQesMi/mBZ96tq1Ri677Cc3Me1HXB79wdD+HfAU2Sfyanun/x/bIYZOTcp5uwJGi9NSJByRzBdp1GS08QRVW1NcPe4IcSfQAk7ywxxgAAAA==",
-                    "CSS_Link": "*gzip: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",
+                    "CSS_Link": "*gzip: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",
                     "title": "*gzip:H4sIAAAAAAAAC7MpySzJSbULjbDRh7AAiMez8hEAAAA="
                 },
                 "body": {
